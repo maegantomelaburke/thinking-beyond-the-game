@@ -28,7 +28,6 @@ body {
 
 .app {
   width: 100%;
-  max-width: 860px;
 }
 
 .screen {
@@ -43,6 +42,9 @@ body {
   background: var(--surface-1);
   border-radius: 16px;
   padding: 56px 48px;
+  max-width: 860px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .eyebrow {
@@ -181,14 +183,18 @@ form input[type="password"]:focus {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  width: 100%;
 }
 
 .answer-btn {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
   text-align: left;
   background: var(--surface-2);
   border: none;
   border-radius: 12px;
-  padding: 16px 18px;
+  padding: 18px 22px;
   color: var(--cream);
   font-family: 'Inter', sans-serif;
   font-size: 15px;
@@ -208,11 +214,14 @@ form input[type="password"]:focus {
   flex-direction: column;
   gap: 16px;
   margin-bottom: 8px;
+  width: 100%;
 }
 
 .result-card {
+  width: 100%;
+  box-sizing: border-box;
   border-radius: 12px;
-  padding: 24px;
+  padding: 28px;
   background: var(--surface-2);
   border-left: 4px solid var(--gray);
 }
@@ -286,7 +295,7 @@ body.results-page {
   padding-top: 56px;
 }
 
-body.results-page .app {
+#screen-data .card {
   max-width: 960px;
 }
 
