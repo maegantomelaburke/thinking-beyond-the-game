@@ -28,7 +28,7 @@ body {
 
 .app {
   width: 100%;
-  max-width: 640px;
+  max-width: 860px;
 }
 
 .screen {
@@ -42,7 +42,7 @@ body {
 .card {
   background: var(--surface-1);
   border-radius: 16px;
-  padding: 40px 32px;
+  padding: 56px 48px;
 }
 
 .eyebrow {
