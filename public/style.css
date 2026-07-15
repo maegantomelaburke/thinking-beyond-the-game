@@ -255,6 +255,13 @@ form input[type="password"]:focus {
   margin: 0 0 14px;
 }
 
+.result-blurb {
+  color: var(--gray);
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0 0 18px;
+}
+
 .result-lanes {
   display: flex;
   flex-wrap: wrap;

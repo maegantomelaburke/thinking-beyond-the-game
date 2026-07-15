@@ -3,32 +3,38 @@
     operator: {
       name: 'Operator',
       tagline: 'You make things run.',
-      lanes: ['Sports management', 'Business operations', 'Event logistics', 'Entrepreneurship (ops)']
+      blurb: "You keep things moving and organized. Notice the specific moments when you naturally take charge of a plan, a schedule, a group.",
+      lanes: ['Sports management', 'Business operations', 'Event logistics', 'Entrepreneurship ops', 'Supply chain', 'Hospitality management', 'Nonprofit operations']
     },
     storyteller: {
       name: 'Storyteller',
       tagline: 'You shape how it gets seen.',
-      lanes: ['Media', 'Content creation', 'Broadcasting', 'Marketing']
+      blurb: "You're good at getting people's attention or explaining things clearly. Notice what topics you like to talk about or moments you like to capture.",
+      lanes: ['Media', 'Content creation', 'Broadcasting', 'Marketing', 'Journalism', 'Public relations', 'Social media strategy']
     },
     advocate: {
       name: 'Advocate',
       tagline: 'You show up for people.',
-      lanes: ['Coaching', 'Education', 'Nonprofit work', 'Community organizing']
+      blurb: "People come to you when they need someone. Notice who you're drawn to helping and what kind of support you're actually good at giving.",
+      lanes: ['Coaching', 'Education', 'Nonprofit work', 'Community organizing', 'Social work', 'Youth development', 'Counseling']
     },
     builder: {
       name: 'Builder',
       tagline: 'You put in the work.',
-      lanes: ['Entrepreneurship', 'Athletic training', 'Health and performance']
+      blurb: "You put in work most people wouldn't. Notice what you build or work on without anyone making you.",
+      lanes: ['Entrepreneurship', 'Athletic training', 'Health and performance', 'Skilled trades', 'Product development', 'Physical therapy']
     },
     creative: {
       name: 'Creative',
       tagline: 'You make something from nothing.',
-      lanes: ['Art', 'Design', 'Fashion', 'Creative production']
+      blurb: "You make things other people wouldn't think to make. Notice what you're drawn to creating when there's no assignment behind it.",
+      lanes: ['Art', 'Design', 'Fashion', 'Creative production', 'Photography', 'Music production', 'Film']
     },
     scholar: {
       name: 'Scholar',
       tagline: 'You go deep.',
-      lanes: ['Research', 'Law', 'Medicine', 'Academics']
+      blurb: "You go deep on things. Notice what you get curious about outside of class, not just what you're good at when someone's grading you.",
+      lanes: ['Research', 'Law', 'Medicine', 'Academics', 'Engineering', 'Data science', 'Public policy']
     }
   };
 
@@ -192,6 +198,11 @@
     tagline.className = 'result-tagline';
     tagline.textContent = role.tagline;
     card.appendChild(tagline);
+
+    const blurb = document.createElement('p');
+    blurb.className = 'result-blurb';
+    blurb.textContent = role.blurb;
+    card.appendChild(blurb);
 
     const list = document.createElement('ul');
     list.className = 'result-lanes';
