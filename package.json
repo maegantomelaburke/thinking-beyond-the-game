@@ -1,0 +1,17 @@
+{
+  "name": "think-beyond-the-game",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Think Beyond the Game - a career and identity quiz for student athletes.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.8.1",
+    "express": "^4.21.2"
+  }
+}

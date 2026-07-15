@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Think Beyond the Game</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<main class="app">
+
+  <section id="screen-name" class="screen active">
+    <div class="card">
+      <p class="eyebrow">Think Beyond the Game</p>
+      <h1>Before you start, tell us who you are.</h1>
+      <p class="sub">Your facilitator will see your results. No one else will.</p>
+      <form id="name-form" novalidate>
+        <label for="first-name">First name</label>
+        <input id="first-name" type="text" required autocomplete="given-name">
+        <label for="last-name">Last name</label>
+        <input id="last-name" type="text" required autocomplete="family-name">
+        <p class="error-text" id="name-error">Enter your first and last name to start.</p>
+        <button type="submit" class="btn-primary">Start</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="screen-quiz" class="screen">
+    <div class="card">
+      <div class="counter"><span id="q-current">01</span> <span class="divider">/</span> <span id="q-total">06</span></div>
+      <h2 id="question-text"></h2>
+      <div class="answers" id="answers"></div>
+    </div>
+  </section>
+
+  <section id="screen-results" class="screen">
+    <div class="card">
+      <p class="eyebrow">Your results</p>
+      <h1 id="results-name"></h1>
+      <p class="sub">Most people are a blend of two. Here's yours.</p>
+      <div class="results-grid" id="results-grid"></div>
+      <button type="button" id="retake-btn" class="btn-secondary">Take it again</button>
+    </div>
+  </section>
+
+</main>
+<script src="/quiz.js"></script>
+</body>
+</html>
